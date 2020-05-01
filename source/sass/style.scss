@@ -1,6 +1,9 @@
+@import "variables.scss";
 @import "fonts.scss";
-
-h1 {
-  font-family: "Montserrat", "Arial", sans-serif; //тест подключения шрифтов
-  color: blueviolet; //тест работы Sass
-}
+@import "mixins.scss";
+@import "scaffolding.scss";
+@import "blocks/container.scss";
+@import "blocks/flex-container.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/logo.scss";
