@@ -54,8 +54,13 @@
           <h2 class="journey__title">Путешествие на край Земли</h2>
           <p class="journey__description">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
         </div>
-        <!--1х: 560px; 2x: 1120px-->
-        <img class="journey__img" src="img/journey-desktop@1x.jpg" srcset="img/journey-desktop@2x.jpg 2x" alt="Очаровательные пингвины" width="560" height="301">
+        <div class="journey__img-container">
+          <picture>
+            <source type="image/webp" srcset="img/journey-desktop@1x.webp 1x, img/journey-desktop@2x.webp 2x">
+            <!--1х: 560px; 2x: 1120px-->
+            <img class="journey__img" src="img/journey-desktop@1x.jpg" srcset="img/journey-desktop@2x.jpg 2x" alt="Очаровательные пингвины" width="560" height="301">
+          </picture>
+        </div>
       </div>
     </section>
 

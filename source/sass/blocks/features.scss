@@ -5,6 +5,7 @@
   background-image: url("../img/bg-features-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   color: $font-color-dark;
 
   @media (min-resolution: $retina-dppx) {
