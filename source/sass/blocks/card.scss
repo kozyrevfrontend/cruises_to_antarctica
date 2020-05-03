@@ -36,16 +36,19 @@
   display: none;
 }
 
-.card:hover .card__wrapper {
+.card:hover .card__wrapper,
+.card:focus .card__wrapper {
   display: block;
 }
 
-.card:hover h3 {
+.card:hover h3,
+.card:focus h3 {
   padding-left: 0;
   padding-top: 30px;
 }
 
-.card:hover .card__img-container {
+.card:hover .card__img-container,
+.card:focus .card__img-container {
   display: none;
 }
 
@@ -53,7 +56,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 10px;
-  padding-top: 316px;
+  padding-top: 336px;
   padding-left: 6px;
   z-index: 2;
 

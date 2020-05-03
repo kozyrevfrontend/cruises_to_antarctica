@@ -1,15 +1,39 @@
 .button {
   display: block;
-  width: 99%;
-  min-height: 40px;
-  padding-top: 9px;
+  padding: 0;
 
   text-align: center;
-  color: $font-color-dark;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
 
-  background-color: $font-color-light;
+  border: none;
+  cursor: pointer;
 
-  &:hover {
+  &--card {
+    width: 99%;
+    min-height: 40px;
+    padding-top: 9px;
+  }
+
+  &--form {
+    width: 100%;
+    min-height: 43px;
+  }
+
+  &--dark {
+    color: $font-color-dark;
+    background-color: $font-color-light;
+  }
+
+  &--light {
+    color: $font-color-dark;
+    background-color: $font-color-light;
+  }
+
+  &:hover,
+  &:focus {
     opacity: 0.7;
   }
 
