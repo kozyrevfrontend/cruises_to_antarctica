@@ -111,6 +111,15 @@
 @media (max-width: $tablet-width) {
   .features {
     min-height: 588px;
+
+    background-image: url("../img/bg-features-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-features-tablet@2x.jpg");
+    }
   }
 
   .features__title {
@@ -232,5 +241,18 @@
   .features__feature-title {
     padding-top: 72px;
     margin-bottom: 7px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .features {
+    background-image: url("../img/bg-features-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-features-mobile@2x.jpg");
+    }
   }
 }

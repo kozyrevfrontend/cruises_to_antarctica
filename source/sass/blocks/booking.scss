@@ -135,6 +135,15 @@
     min-height: 805px;
     padding-left: 0;
     padding-right: 0;
+
+    background-image: url("../img/bg-booking-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-booking-tablet@2x.jpg");
+    }
   }
 
   .booking__wrapper {
@@ -238,5 +247,18 @@
   .booking__form-button {
     margin-top: 28px;
     margin-bottom: 41px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .booking {
+    background-image: url("../img/bg-booking-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-booking-mobile@2x.jpg");
+    }
   }
 }
