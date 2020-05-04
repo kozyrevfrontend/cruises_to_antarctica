@@ -24,7 +24,7 @@
       <nav class="page-header__nav">
         <ul class="site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Преимущества </a>
+            <a class="site-list__link" href="#">Преимущества</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Направления</a>
@@ -296,27 +296,48 @@
       <div class="container flex-container">
         <div class="booking__wrapper">
           <h2 class="booking__title">Раннее бронирование</h2>
-          <p class="booking__slogan">Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+          <p class="booking__slogan">Забронируйте тур за 3-6 месяцев  до даты выезда и сэкономьте до 50%</p>
         </div>
         <div class="booking__form-wrapper">
           <h3 class="visually-hidden">Форма бронирования круиза</h3>
           <p class="booking__offer">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
           <form class="booking__form" method="POST" action="https://echo.htmlacademy.ru">
             <p>
-              <input type="text" name="user-name" placeholder="Валерия">
+              <label class="visually-hidden" for="user-name">Введите ваше имя:</label>
+              <input type="text" name="user-name" placeholder="Валерия" id="user-name">
             </p>
             <p>
-              <input type="text" name="user-phone" inputmode="numeric" placeholder="89236889975">
+              <label class="visually-hidden" for="user-phone">Введите номер телефона:</label>
+              <input type="text" name="user-phone" inputmode="numeric" placeholder="89236889975" id="user-phone">
             </p>
             <p>
-              <input type="email" name="user-email" placeholder="grishaewa.lera@gmail.com">
+              <label class="visually-hidden" for="user-email">Введите ваш email:</label>
+              <input type="email" name="user-email" placeholder="grishaewa.lera@gmail.com" id="user-email">
             </p>
             <p>
-              <input class="visually-hidden" type="checkbox" name="agreement" value="yes" id="agreement">
+              <input class="visually-hidden" type="checkbox" name="agreement" value="yes" id="agreement" checked>
               <label for="agreement">Я согласен на обработку моих персональных данных</label>
             </p>
             <button class="booking__form-button button button--form button--light" type="submit">Оставить заявку</button>
           </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__map-wrapper">
+          <div class="contacts__map-wrapper-inner">
+            <picture>
+              <source type="image/webp" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@1x.webp 2x">
+              <img src="img/bg-map-desktop@1x.png" srcset="img/bg-map-desktop@2x.png 2x" alt="Мы находимся по адресу г. Санкт Петербург, ул. Большая Конюшенная, 19/8" width="560" height="306">
+            </picture>
+          </div>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6d445c536ac7b800bb8e07897bcbdf5fec2aa981cc6298ca48ac32a155f0b05&amp;source=constructor" width="100%" height="335" frameborder="0"></iframe>
+        </div>
+        <div class="contacts__info-wrapper">
+          <p class="contacts__offer">У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+          <p class="contacts__addres"></p>
         </div>
       </div>
     </section>
