@@ -58,7 +58,7 @@
           <picture>
             <source type="image/webp" srcset="img/journey-desktop@1x.webp 1x, img/journey-desktop@2x.webp 2x">
             <!--1х: 560px; 2x: 1120px-->
-            <img class="journey__img" src="img/journey-desktop@1x.jpg" srcset="img/journey-desktop@2x.jpg 2x" alt="Очаровательные пингвины" width="560" height="301">
+            <img src="img/journey-desktop@1x.jpg" srcset="img/journey-desktop@2x.jpg 2x" alt="Очаровательные пингвины" width="560" height="301">
           </picture>
         </div>
       </div>
@@ -325,11 +325,13 @@
     </section>
 
     <section class="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
       <div class="container flex-container flex-container--nowrap">
         <div class="contacts__map-wrapper">
           <div class="contacts__img-container">
             <picture>
               <source type="image/webp" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@1x.webp 2x">
+              <!--1х: 560px; 2x: 1120px-->
               <img src="img/bg-map-desktop@1x.png" srcset="img/bg-map-desktop@2x.png 2x" alt="Мы находимся по адресу г. Санкт Петербург, ул. Большая Конюшенная, 19/8" width="560" height="306">
             </picture>
           </div>
@@ -342,8 +344,48 @@
         </div>
       </div>
     </section>
-
   </main>
+
+  <footer class="page-footer">
+    <div class="container flex-container">
+      <a class="page-footer__logo logo">
+        <svg class="logo__img logo__img--footer" width="70" height="38" viewBox="0 0 70 38" fill="#f9fbfd" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
+        </svg>
+      </a>
+      <nav class="page-footer__nav">
+        <ul class="site-list site-list--footer">
+          <li class="site-list__item site-list__item--footer">
+            <a class="site-list__link" href="#">Преимущества</a>
+          </li>
+          <li class="site-list__item site-list__item--footer">
+            <a class="site-list__link" href="#">Направления</a>
+          </li>
+          <li class="site-list__item site-list__item--footer">
+            <a class="site-list__link" href="#">Ближайшие круизы</a>
+          </li>
+          <li class="site-list__item site-list__item--footer">
+            <a class="site-list__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-footer__social">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--fb" href="#" aria-label="Мы в Фейсбук"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--insta" href="#" aria-label="Мы в Инстаграмм"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="#" aria-label="Мы в Твиттер"></a>
+          </li>
+       </ul>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
   <script src="js/vendor.js"></script>

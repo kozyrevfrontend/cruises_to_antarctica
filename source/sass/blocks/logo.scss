@@ -11,5 +11,9 @@
     height: 22px;
 
     fill: $font-color-dark;
+
+    &--footer {
+      fill: $font-color-light;
+    }
   }
 }

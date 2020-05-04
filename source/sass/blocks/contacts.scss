@@ -2,7 +2,7 @@
   position: relative;
   z-index: -10;
 
-  min-height: 546px;
+  min-height: 547px;
 
   font-size: 16px;
   line-height: 24px;
@@ -17,21 +17,6 @@
   min-height: 306px;
   margin-right: 20px;
   margin-top: 121px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 217px;
-    left: 250px;
-    z-index: -1;
-
-    display: block;
-    width: 18px;
-    height: 22px;
-
-    background-image: url("../img/icon-pin.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 .contacts__map-frame {
@@ -124,6 +109,8 @@
 
 .contacts__phone-link {
   color: $font-color-dark;
+
+  cursor: pointer;
 }
 
 @media (max-width: $tablet-width) {
@@ -135,11 +122,6 @@
     width: 324px;
     min-height: 335px;
     margin-top: 101px;
-
-    &::before {
-      top: 235px;
-      left: 130px;
-    }
   }
 
   .contacts__map-frame {
@@ -210,11 +192,6 @@
     margin-right: 0;
     margin-top: 34px;
     order: 2;
-
-    &::before {
-      top: 225px;
-      left: 117px;
-    }
   }
 
   .contacts__map-frame {
@@ -223,5 +200,6 @@
 
   .contacts__img-container {
     min-height: 316px;
+    max-height: 316px;
   }
 }
