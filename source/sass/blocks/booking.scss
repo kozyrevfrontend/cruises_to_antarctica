@@ -63,8 +63,10 @@
     margin: 0;
     margin-bottom: 20px;
   }
+}
 
-  input:not([type="checkbox"]) {
+.booking__input-wrapper {
+  input {
     width: 100%;
     min-height: 43px;
     margin: 0;
@@ -81,8 +83,10 @@
     border-radius: 0;
     background-color: $font-color-light;
   }
+}
 
-  label:not(.visually-hidden) {
+.booking__checkbox-wrapper {
+  label {
     position: relative;
 
     display: block;
@@ -225,8 +229,8 @@
     text-align: center;
   }
 
-  .booking__form {
-    label:not(.visually-hidden) {
+  .booking__checkbox-wrapper {
+    label {
       display: block;
       width: 76%;
       padding-top: 3px;
