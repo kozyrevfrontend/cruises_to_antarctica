@@ -5,6 +5,7 @@
   background-image: url("../img/bg-header-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-header-desktop@2x.jpg");
@@ -143,6 +144,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    outline: none;
   }
 
   .page-header__nav--closed ~ .page-header__toggle::before {

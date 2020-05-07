@@ -31,3 +31,11 @@ window.addEventListener('resize', function () {
     logo.style.fill = '#f9fbfd';
   }
 });
+
+// Валидация поля ввода телефона
+var inputPhone = document.querySelector('input[type="tel"]');
+
+inputPhone.onkeyup = function (evt) {
+  var target = evt.target;
+  target.value = this.value.replace(/[^\d]/g, '');
+};

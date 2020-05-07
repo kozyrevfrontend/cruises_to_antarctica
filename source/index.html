@@ -24,16 +24,16 @@
       <nav class="page-header__nav">
         <ul class="site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Преимущества</a>
+            <a class="site-list__link" href="#features">Преимущества</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Направления</a>
+            <a class="site-list__link" href="#journey">Направления</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Ближайшие круизы</a>
+            <a class="site-list__link" href="#catalog">Ближайшие круизы</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Контакты</a>
+            <a class="site-list__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -48,7 +48,7 @@
   </header>
 
   <main class="page-main">
-    <section class="journey">
+    <section id="journey" class="journey">
       <div class="container flex-container flex-container--nowrap">
         <div class="journey__inner">
           <h2 class="journey__title">Путешествие на край Земли</h2>
@@ -64,7 +64,7 @@
       </div>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
       <div class="container">
         <h2 class="features__title">Преимущества</h2>
         <ul class="features__list">
@@ -84,7 +84,7 @@
       </div>
     </section>
 
-    <section class="catalog">
+    <section id="catalog" class="catalog">
       <div class="container">
         <h2 class="catalog__title">Ближайшие круизы</h2>
         <ul class="catalog__list">
@@ -304,18 +304,18 @@
           <form class="booking__form" method="POST" action="https://echo.htmlacademy.ru">
             <p class="booking__input-wrapper">
               <label class="visually-hidden" for="user-name">Введите ваше имя:</label>
-              <input type="text" name="user-name" placeholder="Валерия" id="user-name">
+              <input type="text" name="user-name" placeholder="Валерия" id="user-name" required>
             </p>
             <p class="booking__input-wrapper">
               <label class="visually-hidden" for="user-phone">Введите номер телефона:</label>
-              <input type="tel" name="user-phone" pattern="[0-9]{11}" placeholder="89236889975" id="user-phone">
+              <input type="tel" name="user-phone" pattern="[0-9]{11}" placeholder="89236889975" id="user-phone" required>
             </p>
             <p class="booking__input-wrapper">
               <label class="visually-hidden" for="user-email">Введите ваш email:</label>
-              <input type="email" name="user-email" placeholder="grishaewa.lera@gmail.com" id="user-email">
+              <input type="email" name="user-email" placeholder="grishaewa.lera@gmail.com" id="user-email" required>
             </p>
             <p class="booking__checkbox-wrapper">
-              <input class="visually-hidden" type="checkbox" name="agreement" value="yes" id="agreement" checked>
+              <input class="visually-hidden" type="checkbox" name="agreement" value="yes" id="agreement" checked required>
               <label for="agreement">Я согласен на обработку моих персональных данных</label>
             </p>
             <button class="booking__form-button button button--form button--light" type="submit">Оставить заявку</button>
@@ -324,7 +324,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="container flex-container flex-container--nowrap">
         <div class="contacts__map-wrapper">

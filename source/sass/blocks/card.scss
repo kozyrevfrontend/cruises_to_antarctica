@@ -6,6 +6,7 @@
   padding-right: 23px;
 
   background-color: $font-color-dark;
+  outline: none;
 
   picture {
     width: 100%;
@@ -102,9 +103,16 @@
   margin-right: auto;
 }
 
+@media (max-width: $desktop-width-card) {
+  .card {
+    min-height: 460px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .card {
     width: 47.58%;
+    min-height: 386px;
     padding-left: 35px;
     padding-right: 33px;
 
